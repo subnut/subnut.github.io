@@ -1,0 +1,9 @@
+:root {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+@media (prefers-color-scheme: light) {
+	background: #000000;
+	color: #FFFFFF;
+}
