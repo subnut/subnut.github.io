@@ -1,17 +1,38 @@
-:root {
-	background: #FFFFFF;
-	color: #000000;
+@font-face {
+  font-family: 'RecVar';
+  src: url('https://raw.githubusercontent.com/arrowtype/recursive/main/fonts/ArrowType-Recursive-1.077/Recursive_Web/woff2_variable_subsets/fonts/Recursive_VF_1.077--subset_range_english_basic.woff2') format('woff2');
+  unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+}
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: RecVar, sans-serif;
+  font-variation-settings: 'CASL' 0.7;
+  font-size: 1em;
+  max-width: 25em;
+  margin: auto;
+}
+
+code {
+  font-family: RecVar, monospace;
+  font-variation-settings: 'MONO' 1;
+  font-variation-settings: 'CASL' 0;
+  font-weight: lighter;
 }
 
 @media (prefers-color-scheme: dark) {
-	background: #000000;
-	color: #FFFFFF;
+  background: #000000;
+  color: #FFFFFF;
 }
 
-table, th, td {
-	border: 1px solid;
-}
+table, th, td { border: 1px solid; }
+th, td { padding: 0.5em; }
 
-th, td {
-	padding: 1em;
+h1 { letter-spacing: -1px; }
+h2 { letter-spacing: -0.5px; }
+
+
+.hate-detail {
+  font-size: 0.9em;
 }
