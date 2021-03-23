@@ -3,7 +3,15 @@
 	color: #000000;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	background: #000000;
 	color: #FFFFFF;
+}
+
+table, th, td {
+	border: 1px solid;
+}
+
+th, td {
+	padding: 1em;
 }
