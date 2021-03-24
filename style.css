@@ -50,7 +50,7 @@ a {
 
 a:hover {
   font-weight: bolder;
-  font-variation-settings: 'CASL' 1;
+  font-variation-settings: 'CASL' 1, 'slnt' -5;
   animation-name: a-mouse-in;
 }
 
@@ -58,7 +58,7 @@ a:hover {
   from {font-weight: inherit;}
   to {
     font-weight: bolder;
-    font-variation-settings: 'CASL' 1;
+    font-variation-settings: 'CASL' 1, 'slnt' -5;
   }
 }
 
