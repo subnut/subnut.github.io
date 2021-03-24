@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #FFFFFF;
-  color: #000000;
+  background: #FFF;
+  color: #000;
   font-family: RecVar, sans-serif;
   font-variation-settings: 'CASL' 0.7;
   font-size: 1em;
@@ -14,39 +14,47 @@ body {
   margin: 1em auto;
 }
 
-h1 { letter-spacing: -1px; }
-h2 { letter-spacing: -0.5px; }
-
-code {
-  font-family: RecVar, monospace;
-  font-variation-settings: 'MONO' 1, 'CASL' 0;
+:target { background: #FF06; }
+::selection {
+  color: inherit;
+  background: #BFDFFF;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #000000;
-    color: #FFFFFF;
+    background: #000;
+    color: #FFF;
   }
+  :target { background: #440; }
+  ::selection { background: #445; }
 }
 
-table, th, td { border: 1px solid; }
 th, td { padding: 0.5em; }
+table, th, td { border: 1px solid; }
+
+h1 { letter-spacing: -1px; }
+h2 { letter-spacing: -0.5px; }
+
+pre { margin: 1.5em; }
+pre, code {
+  font-family: RecVar, monospace;
+  font-variation-settings: 'MONO' 1, 'CASL' 1;
+}
 
 a {
   color: inherit;
   text-decoration: underline;
-  animation-name: a-out;
+  animation-name: a-mouse-out;
   animation-duration: 0.15s;
 }
 
 a:hover {
   font-weight: bolder;
   font-variation-settings: 'CASL' 1;
-  animation-name: a-in;
-  animation-duration: 0.15s;
+  animation-name: a-mouse-in;
 }
 
-@keyframes a-in {
+@keyframes a-mouse-in {
   from {font-weight: inherit;}
   to {
     font-weight: bolder;
@@ -54,7 +62,7 @@ a:hover {
   }
 }
 
-@keyframes a-out {
+@keyframes a-mouse-out {
   from {
     font-weight: bolder;
     font-variation-settings: 'CASL' 1;
