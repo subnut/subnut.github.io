@@ -19,14 +19,14 @@ body {
 
 code {
   font-family: RecVar, monospace;
-  font-variation-settings: 'MONO' 1;
-  font-variation-settings: 'CASL' 0;
-  font-weight: lighter;
+  font-variation-settings: 'MONO' 1, 'CASL' 0;
 }
 
 @media (prefers-color-scheme: dark) {
-  background: #000000;
-  color: #FFFFFF;
+  body {
+    background: #000000;
+    color: #FFFFFF;
+  }
 }
 
 table, th, td { border: 1px solid; }
